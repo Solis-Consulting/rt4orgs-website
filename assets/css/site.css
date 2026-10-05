@@ -822,8 +822,9 @@ nav.site-nav {
 }
 
 .price-grid {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-items: stretch;
+  margin-top: 36px;
 }
 
 .nationals-card {
@@ -919,6 +920,11 @@ nav.site-nav {
   letter-spacing: 0;
   color: var(--muted);
   font-weight: 500;
+}
+
+.price-word {
+  font-size: 40px;
+  letter-spacing: -0.03em;
 }
 
 .price-card ul {
