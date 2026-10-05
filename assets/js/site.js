@@ -37,6 +37,8 @@
   var active = 0;
   var timer;
 
+  var caption = document.querySelector("#product-caption");
+
   function show(index) {
     active = index;
     slides.forEach(function (slide, i) {
@@ -49,13 +51,14 @@
       if (i === index) dot.setAttribute("aria-current", "true");
       else dot.removeAttribute("aria-current");
     });
+    if (caption && slides[index]) caption.textContent = slides[index].getAttribute("data-caption") || "";
   }
 
   function start() {
     window.clearInterval(timer);
     timer = window.setInterval(function () {
       show((active + 1) % slides.length);
-    }, 7000);
+    }, 4500);
   }
 
   if (slides.length && dots.length) {
@@ -65,6 +68,7 @@
         start();
       });
     });
+    show(0);
     start();
   }
 

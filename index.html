@@ -49,16 +49,32 @@
         </div>
 
         <div class="product-live">
-          <div class="product-showcase">
-            <div class="showcase-people">
+          <div class="hero-carousel-frame" id="product-stage">
+            <div class="hero-carousel-slide is-active" data-caption="UNC · BYX" aria-hidden="false">
               <img src="assets/media/unc-byx.jpg" alt="UNC chapter members together">
-              <img src="assets/media/phidelt.jpg" alt="Phi Delta Theta members outside the house">
-              <img src="assets/media/step-org.jpg" alt="Members dressed for a chapter event">
-              <img src="assets/media/ttech-byx.jpg" alt="Texas Tech chapter members">
-              <img src="assets/media/fiji-rush.jpg" alt="Students at a Fiji recruitment table">
-              <img src="assets/media/iowa-house.jpg" alt="Chapter members on the house stairs">
+              <p class="hero-carousel-caption">UNC · BYX</p>
             </div>
-            <div class="showcase-sheet">
+            <div class="hero-carousel-slide" data-caption="Phi Delt" aria-hidden="true">
+              <img src="assets/media/phidelt.jpg" alt="Phi Delta Theta members outside the house">
+              <p class="hero-carousel-caption">Phi Delt</p>
+            </div>
+            <div class="hero-carousel-slide" data-caption="Chapter event" aria-hidden="true">
+              <img src="assets/media/step-org.jpg" alt="Members dressed for a chapter event">
+              <p class="hero-carousel-caption">Chapter event</p>
+            </div>
+            <div class="hero-carousel-slide" data-caption="Texas Tech · BYX" aria-hidden="true">
+              <img src="assets/media/ttech-byx.jpg" alt="Texas Tech chapter members">
+              <p class="hero-carousel-caption">Texas Tech · BYX</p>
+            </div>
+            <div class="hero-carousel-slide" data-caption="Fiji · rush" aria-hidden="true">
+              <img src="assets/media/fiji-rush.jpg" alt="Students at a Fiji recruitment table">
+              <p class="hero-carousel-caption">Fiji · rush</p>
+            </div>
+            <div class="hero-carousel-slide" data-caption="Chapter house" aria-hidden="true">
+              <img src="assets/media/iowa-house.jpg" alt="Chapter members on the house stairs">
+              <p class="hero-carousel-caption">Chapter house</p>
+            </div>
+            <div class="hero-carousel-slide hero-carousel-slide-pilot" data-caption="Phi Kappa Theta pilot · 39 contacts" aria-hidden="true">
               <div class="list-chrome">
                 <div class="list-chrome-title">
                   <strong>RT for Orgs · Phi Kappa Theta pilot</strong>
@@ -104,7 +120,16 @@
               </table>
             </div>
           </div>
-          <p class="product-live-caption">Phi Kappa Theta pilot · 39 contacts · live</p>
+          <div class="hero-carousel-dots" role="tablist" aria-label="Product showcase">
+            <button type="button" aria-label="UNC"></button>
+            <button type="button" aria-label="Phi Delt"></button>
+            <button type="button" aria-label="Chapter event"></button>
+            <button type="button" aria-label="Texas Tech"></button>
+            <button type="button" aria-label="Fiji"></button>
+            <button type="button" aria-label="Chapter house"></button>
+            <button type="button" aria-label="Phi Kappa Theta pilot"></button>
+          </div>
+          <p class="product-live-caption" id="product-caption">UNC · BYX</p>
         </div>
       </div>
     </section>
@@ -363,6 +388,6 @@
     </div>
   </footer>
 
-  <script src="assets/js/site.js"></script>
+  <script src="assets/js/site.js?v=2"></script>
 </body>
 </html>
