@@ -314,26 +314,34 @@ nav.site-nav {
   min-width: 0;
 }
 
-.product-stage {
-  position: relative;
-  height: 520px;
+.product-showcase {
   overflow: hidden;
   border-radius: var(--radius);
   border: 1px solid var(--border);
-  background: #0c0c0c;
+  background: #ffffff;
   box-shadow: 0 24px 60px rgba(80, 40, 30, 0.12);
 }
 
-.product-stage iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1280px;
-  height: 980px;
-  border: 0;
-  background: #0c0c0c;
-  transform-origin: 0 0;
-  pointer-events: none;
+.showcase-people {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 118px 118px;
+  gap: 6px;
+  padding: 8px;
+  background: #ffffff;
+}
+
+.showcase-people img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 18%;
+  border-radius: 10px;
+}
+
+.showcase-sheet {
+  background: #ffffff;
+  border-top: 1px solid var(--border);
 }
 
 .product-live-caption {
@@ -1208,6 +1216,11 @@ footer.site-footer {
   .nationals-card {
     grid-template-columns: 1fr;
     grid-auto-rows: 220px;
+  }
+
+  .showcase-people {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 120px 120px 120px;
   }
 
   .nationals-card {
