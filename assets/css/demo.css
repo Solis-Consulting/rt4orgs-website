@@ -38,7 +38,7 @@
   cursor: pointer;
 }
 .wire-row button.is-sent { background: #f4443f; color: #fff; border-color: #f4443f; }
-.wire-handle { font-weight: 600; }
+.wire-handle { font-weight: 600; color: inherit; text-decoration: underline; }
 .wire-meta { color: #777; font-size: 12px; }
 @media (max-width: 800px) {
   .wire-row, .wire-head-row { grid-template-columns: 1fr; }
