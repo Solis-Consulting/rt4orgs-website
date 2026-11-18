@@ -19,6 +19,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="stylesheet" href="assets/css/demo.css?v=1">
 </head>
 <body>
   <nav class="site-nav">
@@ -41,6 +42,31 @@
   </nav>
 
   <main id="top">
+    <section class="wire" aria-label="Live wire demo">
+      <div class="wire-top">
+        <div>
+          <h2>RT for Orgs</h2>
+          <p>Shaped like the Copilot list. These rows are a sample, not a live chapter database.</p>
+        </div>
+      </div>
+      <div class="wire-tools">
+        <select data-wire-status>
+          <option value="all">All</option>
+          <option value="new">New</option>
+          <option value="messaged">Messaged</option>
+          <option value="replied">Replied</option>
+          <option value="interested">Interested</option>
+        </select>
+        <input data-wire-search type="search" placeholder="Search name or note">
+      </div>
+      <div class="wire-head-row"><div>Name</div><div>Note</div><div>Status</div><div>Actions</div></div>
+      <div class="wire-row" data-prospect="new"><div><div class="wire-handle">Maya Chen</div><div class="wire-meta">Sample</div></div><div>Campus ministry and service work.</div><div data-status>New</div><div><button type="button" data-mark>Mark sent</button></div></div>
+      <div class="wire-row" data-prospect="messaged"><div><div class="wire-handle">Jordan Lee</div><div class="wire-meta">Sample</div></div><div>Club soccer, class of 2028.</div><div data-status>Messaged</div><div><button type="button" data-mark>Mark sent</button></div></div>
+      <div class="wire-row" data-prospect="replied"><div><div class="wire-handle">Avery Nunez</div><div class="wire-meta">Sample</div></div><div>Pre-med and weekend volunteering.</div><div data-status>Replied</div><div><button type="button" data-mark>Mark sent</button></div></div>
+      <div class="wire-row" data-prospect="interested"><div><div class="wire-handle">Sam Okonkwo</div><div class="wire-meta">Sample</div></div><div>Resident advisor.</div><div data-status>Interested</div><div><button type="button" data-mark>Mark sent</button></div></div>
+      <div class="wire-row" data-prospect="new"><div><div class="wire-handle">Riley Park</div><div class="wire-meta">Sample</div></div><div>A cappella and student leadership.</div><div data-status>New</div><div><button type="button" data-mark>Mark sent</button></div></div>
+      <div class="wire-row" data-prospect="messaged"><div><div class="wire-handle">Chris Dalton</div><div class="wire-meta">Sample</div></div><div>Intramurals and business club.</div><div data-status>Messaged</div><div><button type="button" data-mark>Mark sent</button></div></div>
+    </section>
     <section id="hero">
       <div class="hero-grid">
         <div>
@@ -397,6 +423,7 @@
     </div>
   </footer>
 
+  <script src="assets/js/demo.js?v=1"></script>
   <script src="assets/js/site.js?v=2"></script>
 </body>
 </html>

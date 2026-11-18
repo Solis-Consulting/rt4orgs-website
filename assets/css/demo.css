@@ -1,0 +1,45 @@
+.wire {
+  margin: 96px 24px 24px;
+  background: #fff;
+  border: 1px solid rgba(28, 22, 20, 0.12);
+  border-radius: 16px;
+  padding: 20px;
+  color: #1c1614;
+}
+.wire-top { display: flex; justify-content: space-between; gap: 16px; align-items: center; margin-bottom: 14px; }
+.wire-top h2 { margin: 0; font-size: 22px; letter-spacing: -0.03em; }
+.wire-top p { margin: 4px 0 0; color: #777; font-size: 13px; }
+.wire-tools { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+.wire-tools input, .wire-tools select, .wire-tools button {
+  font: inherit;
+  font-size: 14px;
+  border: 1px solid rgba(28, 22, 20, 0.16);
+  border-radius: 8px;
+  padding: 8px 10px;
+  background: #fff;
+}
+.wire-tools button { cursor: pointer; }
+.wire-row, .wire-head-row {
+  display: grid;
+  grid-template-columns: 1.2fr 2fr 0.8fr 1.4fr;
+  gap: 8px;
+  padding: 10px 12px;
+  font-size: 14px;
+}
+.wire-head-row { background: #f6f2ed; font-weight: 600; border-radius: 8px; }
+.wire-row { border-top: 1px solid rgba(28, 22, 20, 0.08); }
+.wire-row button {
+  font: inherit;
+  font-size: 12px;
+  border: 1px solid rgba(28, 22, 20, 0.16);
+  background: #fff;
+  border-radius: 8px;
+  padding: 6px 8px;
+  cursor: pointer;
+}
+.wire-row button.is-sent { background: #f4443f; color: #fff; border-color: #f4443f; }
+.wire-handle { font-weight: 600; }
+.wire-meta { color: #777; font-size: 12px; }
+@media (max-width: 800px) {
+  .wire-row, .wire-head-row { grid-template-columns: 1fr; }
+}
